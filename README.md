@@ -32,4 +32,4 @@ if err != nil {
 
 ### Licence
 
-Released under MIT license, see [LICENSE](LICENSE.md) for details.
+Released under MIT license, see [LICENSE](LICENSE) for details.
