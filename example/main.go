@@ -1,13 +1,12 @@
-# mail
+package main
 
-## Install
-```shell
-go get github.com/zs5460/mail
-```
+import (
+	"log"
 
-## Usage
-```go
+	"github.com/zs5460/mail"
+)
 
+func main() {
 	cfg := mail.Config{
 		MailSubject:   "test",
 		MailServer:    "smtp.xxx.com:25",
@@ -22,14 +21,10 @@ go get github.com/zs5460/mail
 		cfg.MailServer,
 		cfg.MailReciver,
 		cfg.MailSubject,
-		"this is a test mail",
-    )
+		"this is a test mail used:"+cfg.MailServer,
+	)
 	if err != nil {
 		log.Println(err)
 	}
 
-```
-
-### Licence
-
-Released under MIT license, see [LICENSE](LICENSE.md) for details.
+}
